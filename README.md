@@ -83,15 +83,15 @@ class WithinRange < Strategy
 end
 ```
 
-## AboveRange Strategy
+## BelowMaximum Strategy
 
 ```ruby
-class AboveRange < Strategy
+class BelowMaximum < Strategy
   # The maximum temperature value for the range
   preference :max, :decimal, default: 160.0
 
   def good?(value)
-    value > preferred_max
+    value < preferred_max
   end
 end
 ```
