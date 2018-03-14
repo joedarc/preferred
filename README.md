@@ -63,6 +63,8 @@ bin/rails g model strategy description:string type:string preference_hash:jsonb
 class Strategy < ApplicationRecord
   include Preferable
 
+  validates_presence_of :description
+
 end
 ```
 
