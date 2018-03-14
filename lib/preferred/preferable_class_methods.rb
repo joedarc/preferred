@@ -1,4 +1,4 @@
-module Preferred::Preferable
+module Preferred::PreferableClassMethods
 
   def preference(name, type, *args)
     options = args.extract_options!

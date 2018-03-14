@@ -2,7 +2,7 @@ module Preferred::Preferable
   extend ActiveSupport::Concern
 
   included do
-    extend PreferableClassMethods
+    extend Preferred::PreferableClassMethods
   end
 
   def get_preference(name)
