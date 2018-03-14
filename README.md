@@ -34,6 +34,8 @@ Define preferences in the model and use
 
 ```ruby
 class ExampleModel < ApplicationRecord
+  include Preferred::Preferable
+  
   preference :nickname, :string
   preference :min_value, :decimal, default: 32.0
   preference :year, :integer, default: 2018
@@ -61,7 +63,7 @@ bin/rails g model strategy description:string type:string preference_hash:jsonb
 
 ```ruby
 class Strategy < ApplicationRecord
-  include Preferable
+  include Preferred::Preferable
 
   validates_presence_of :description
 
