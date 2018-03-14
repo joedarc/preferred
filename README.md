@@ -35,7 +35,7 @@ Define preferences in the model and use
 ```ruby
 class ExampleModel < ApplicationRecord
   include Preferred::Preferable
-  
+
   preference :nickname, :string
   preference :min_value, :decimal, default: 32.0
   preference :year, :integer, default: 2018
@@ -91,7 +91,7 @@ end
 
 ```ruby
 class BelowMaximum < Strategy
-  # The maximum temperature value for the range
+  # The maximum temperature allowed
   preference :max, :decimal, default: 160.0
 
   def good?(value)
