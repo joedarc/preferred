@@ -22,7 +22,7 @@ bundle install
 
 # Simple Example
 
-This simple example shows how to use preferred in a Rails model. Default values are optional. Preferred will provides types for string, decimal, integer, boolean, and date.
+This simple example shows how to use preferred in a Rails model. Default values are optional. Preferred will provides types for string, decimal, integer, boolean, and date. Preferences are prefixed with "preferred_".
 
 Create a model and ensure that it has a JSONB column called preference_hash
 
